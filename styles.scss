@@ -1,0 +1,77 @@
+@import 'global';
+@import 'variables';
+
+
+.card{
+    position: relative;
+    width: 480px;
+    // height: 330px;
+    background-color: map-get($color,"DarkGrayishBlue");
+    border-radius:12px;
+    padding: 1.5em;
+    
+    .top{
+        text-align: center;
+        font-size: 12px;
+        color: map-get($color,"NeonGreen" );
+        letter-spacing: 5px;
+    }
+    .content{
+        margin-top: 23px;
+        text-align: center;
+        color: map-get($color,'LightCyan' );
+    }
+    .barContainer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 42px;
+        margin-bottom: 32px;
+        .bar{
+            height: 1px;
+            width: 43%;
+            background-color:map-get($color, "GrayishBlue" );
+        }
+        .doubleBar{
+            display: flex;
+            align-items: center;
+            background-color: map-get($color,"lightCyan");
+
+            
+            div{
+                width: 6px;
+                height: 15px;
+                border-radius: 12px;
+                background-color: white;
+                margin: 0 4px;
+            }
+        }
+    }
+    .diceContainer{
+        // width: 100%;
+        // display: grid;
+        // place-content: center;
+        // margin-top: 13px;
+        position: absolute;
+        left: 42%;
+        .diceIcon{
+            width: 70px;
+            height: 70px;
+            border-radius: 100%;
+            display: grid;
+            place-items: center;
+            background-color:map-get($color,"NeonGreen" );
+            
+            img{
+                object-fit: contain;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+    .content{
+        font-size: 20px;
+    }
+}

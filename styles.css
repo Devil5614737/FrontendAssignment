@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 28px;
+  font-family: 'Manrope', sans-serif;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-color: #1f2632;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  padding: 0 3em;
+}
+
+.card {
+  position: relative;
+  width: 480px;
+  background-color: #323a49;
+  border-radius: 12px;
+  padding: 1.5em;
+}
+
+.card .top {
+  text-align: center;
+  font-size: 12px;
+  color: #52ffa8;
+  letter-spacing: 5px;
+}
+
+.card .content {
+  margin-top: 23px;
+  text-align: center;
+  color: #cee3e9;
+}
+
+.card .barContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 42px;
+  margin-bottom: 32px;
+}
+
+.card .barContainer .bar {
+  height: 1px;
+  width: 43%;
+  background-color: #4e5d73;
+}
+
+.card .barContainer .doubleBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .barContainer .doubleBar div {
+  width: 6px;
+  height: 15px;
+  border-radius: 12px;
+  background-color: white;
+  margin: 0 4px;
+}
+
+.card .diceContainer {
+  position: absolute;
+  left: 42%;
+}
+
+.card .diceContainer .diceIcon {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background-color: #52ffa8;
+}
+
+.card .diceContainer .diceIcon img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
