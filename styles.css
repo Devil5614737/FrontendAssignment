@@ -83,6 +83,7 @@ body {
 }
 
 .card .diceContainer .diceIcon {
+  cursor: pointer;
   width: 70px;
   height: 70px;
   border-radius: 100%;
